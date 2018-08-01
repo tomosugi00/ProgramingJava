@@ -130,3 +130,34 @@ java.lang.NullPointerException
 	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:603)
 	at org.eclipse.jface.text.contentassist.AdditionalInfoController$Timer$2$1.run(AdditionalInfoController.java:113)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.recommenders.types.rcp 1 4 2018-08-01 23:29:36.191
+!MESSAGE Full project indexing required:
+  [+] C:\Program Files\Java\jdk1.8.0_152\jre\lib\charsets.jar
+  [+] C:\Program Files\Java\jdk1.8.0_152\jre\lib\ext\access-bridge-64.jar
+  [+] C:\Program Files\Java\jdk1.8.0_152\jre\lib\ext\cldrdata.jar
+  [+] C:\Program Files\Java\jdk1.8.0_152\jre\lib\ext\dnsns.jar
+  [+] C:\Program Files\Java\jdk1.8.0_152\jre\lib\ext\jaccess.jar
+  [+] C:\Program Files\Java\jdk1.8.0_152\jre\lib\ext\jfxrt.jar
+  [+] C:\Program Files\Java\jdk1.8.0_152\jre\lib\ext\localedata.jar
+  [+] C:\Program Files\Java\jdk1.8.0_152\jre\lib\ext\nashorn.jar
+  [+] C:\Program Files\Java\jdk1.8.0_152\jre\lib\ext\sunec.jar
+  [+] C:\Program Files\Java\jdk1.8.0_152\jre\lib\ext\sunjce_provider.jar
+  [+] C:\Program Files\Java\jdk1.8.0_152\jre\lib\ext\sunmscapi.jar
+  [+] C:\Program Files\Java\jdk1.8.0_152\jre\lib\ext\sunpkcs11.jar
+  [+] C:\Program Files\Java\jdk1.8.0_152\jre\lib\ext\zipfs.jar
+  [+] C:\Program Files\Java\jdk1.8.0_152\jre\lib\jce.jar
+  [+] C:\Program Files\Java\jdk1.8.0_152\jre\lib\jfr.jar
+  [+] C:\Program Files\Java\jdk1.8.0_152\jre\lib\jsse.jar
+  [+] C:\Program Files\Java\jdk1.8.0_152\jre\lib\resources.jar
+  [+] C:\Program Files\Java\jdk1.8.0_152\jre\lib\rt.jar
+
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.needsRebuild(ProjectTypesIndex.java:169)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.startUp(ProjectTypesIndex.java:122)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Thread.java:748)

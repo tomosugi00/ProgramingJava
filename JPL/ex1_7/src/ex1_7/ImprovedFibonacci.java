@@ -3,7 +3,7 @@ package ex1_7;
 public class ImprovedFibonacci {
 	static final int MAX_INDEX = 9;
 	/** 
-	 * 偶数要素に'*'を付けて、フィボナッチ素上r津の
+	 * 偶数要素に'*'を付けて、フィボナッチ数列の
 	 * 最初の方の要素を表示する  */
 	public static void main(String[] args) {
 		int lo = 1;
